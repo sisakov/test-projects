@@ -1,0 +1,23 @@
+{
+  "name": "test-projects",
+  "version": "1.0.0",
+  "description": "list of sisakov test projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js",
+    "deploy": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sisakov/test-projects.git"
+  },
+  "author": "sisakov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sisakov/test-projects/issues"
+  },
+  "homepage": "https://github.com/sisakov/test-projects#readme",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
