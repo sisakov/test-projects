@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  margin: 0;
 }
 
 @font-face {
@@ -13,6 +14,52 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.height-100vh {
+  height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "nav header header header header header"
+    "nav main main main main main";
+  grid-gap: 10px;
+}
+.nav-area {
+  grid-area: nav;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to left, #2c5364, #203a43, #0f2027);
+  box-shadow: 2px 0px 2px 1px rgba(0, 0, 0, 0.2);
+  color: #ccc;
+}
+
+.nav-area ul {
+  list-style-type: none;
+  /* padding: 0; */
+}
+
+.nav-area ul a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.header-area {
+  grid-area: header;
+}
+.main-area {
+  grid-area: main;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-space-between {
+  justify-content: space-between;
 }
 
 .card {
